@@ -1,11 +1,14 @@
 import React from "react";
 
-const Pricing = () => {
+const Planes = () => {
   return (
     <section
-      id="pricing"
-      className="w-full h-[800px] pb-20 flex flex-col md:flex-row border-b-[1px] border-b-black justify-center items-center mt-20"
+      id="planes"
+      className="bg-radial-gradient-cyan w-full h-[800px] pb-20 flex flex-col items-center justify-center space-y-10 mt-28"
     >
+      <h1 className="text-6xl font-bold text-center text-white mb-4 ">
+        Planes
+      </h1>
       <div className="w-full h-[1800px] md:h-[600px] flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 text-zinc-400">
         <div className="w-full md:w-1/3 h-full md:h-auto p-4 border-2 border-white flex flex-col items-center justify-evenly rounded-lg shadow-xl shadow-cyan-500/70 tracking-wide cursor-pointer hover:shadow-purple-500/40 duration-300 hover:text-white">
           <header className="font-bold text-3xl mb-2">Principiante</header>
@@ -66,4 +69,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Planes;
