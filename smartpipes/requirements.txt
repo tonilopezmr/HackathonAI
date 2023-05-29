@@ -1,1 +1,1 @@
-seaplane==0.3.5
+seaplane==0.3.6
