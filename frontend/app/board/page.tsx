@@ -1,11 +1,30 @@
+'use client';
+
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from './data';
 import { cardData } from './data';
 
 function Card({ data }: { data: cardData }) {
+  const router = useRouter();
+
+  const redirect = (id: number) => {
+    switch (id) {
+      case 12:
+        router.push('/board/write-blog-post');
+        break;
+      case 13:
+        router.push('/board/query-pdfs');
+        break;
+    }
+  };
+
   return (
-    <button className='flex w-full flex-col bg-clip-border rounded-xl border-2 border-zinc-100 text-zinc-400 hover:text-zinc-100 p-6 shadow-lg hover:border-white shadow-cyan-500/70 hover:shadow-purple-500/40 duration-300'>
+    <button
+      className='flex w-full flex-col bg-clip-border rounded-xl border-2 border-zinc-100 text-zinc-400 hover:text-zinc-100 p-6 shadow-lg hover:border-white shadow-cyan-500/70 hover:shadow-purple-500/40 duration-300'
+      onClick={() => redirect(data.id)}
+    >
       <div className='mx-auto'>
         <img src={data.thumbnail} className='w-10 h-10' />
       </div>
@@ -17,7 +36,7 @@ function Card({ data }: { data: cardData }) {
 
 export default function Board() {
   return (
-    <main className='min-h-screen bg-slate-900'>
+    <main>
       <div className='p-8 md:w-10/12 md:mx-auto text-center'>
         <h1 className='text-4xl mt-12 font-bold text-zinc-100'>
           BOARD - Cartas
