@@ -1,1 +1,2 @@
 seaplane==0.3.6
+psycopg2==2.9.6

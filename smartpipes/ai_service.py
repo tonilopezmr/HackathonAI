@@ -1,5 +1,5 @@
 from seaplane import (    
-    config,    
+    context,    
     coprocessor,    
     log,
     smartpipe,

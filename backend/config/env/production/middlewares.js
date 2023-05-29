@@ -6,7 +6,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:3000']
+      origin: ['http://localhost:3000', "https://hackathon.bodia.ai"]
     }
   },
   'strapi::poweredBy',
