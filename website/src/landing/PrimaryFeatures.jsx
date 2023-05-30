@@ -4,10 +4,10 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/landing/Container'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotExpenses from '@/images/screenshots/pdfs.png'
+import screenshotPayroll from '@/images/screenshots/blog_post.png'
+import screenshotReporting from '@/images/screenshots/blog_post.png'
+import screenshotVatReturns from '@/images/screenshots/blog_post.png'
 
 const features = [
   {

@@ -50,7 +50,7 @@ export default function WriteBlogPost() {
   const [isQuestionLoading, setQuestionLoading] = useState(false);
   const [isFileReady, setFileReady] = useState(false);
   const [fileId, setFileId] = useState(null);
-  const [answer, setAnswer] = useState(null);
+  const [answer, setAnswer] = useState({"answer": "El documento es un Acuerdo de Confidencialidad entre Google y D. Antonio López Marín, en el que ambas partes reconocen su capacidad legal para obligarse a los efectos del acuerdo. ACE compartirá información confidencial relacionada con el proyecto Bard con el Receptor, y ambas partes acuerdan cumplir con todas sus obligaciones en virtud del presente Acuerdo de Confidencialidad para proteger la confidencialidad e impedir cualquier acceso o uso o comunicación no autorizado de dicha información. El acuerdo establece las condiciones bajo las cuales se compartirá la información confidencial y las consecuencias del incumplimiento del mismo." });
 
   const uploadFile = (file) => {    
     const form = new FormData()
@@ -127,7 +127,7 @@ export default function WriteBlogPost() {
     <>  
       <div className="min-h-full">
         
-        <Header />
+      <Header title="Habla con cualquier PDF"/>
         <main className="-mt-32">
           <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             <div className='mb-4'>            

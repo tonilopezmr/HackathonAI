@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import image from '@/images/screenshots/contacts.png'
+import image from '@/images/screenshots/dashboard.png'
 export function Hero() {
 
   return (
