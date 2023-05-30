@@ -8,10 +8,10 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const navigation = [  
-  { name: 'Features', href: '#features' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Developers', href: '#developers' },  
-  { name: 'Team', href: '#team' },
+  { name: 'Características', href: '#features' },
+  { name: 'Planes', href: '#pricing' },
+  { name: 'Desarrolladores', href: '#developers' },  
+  { name: 'Equipos', href: '#team' },
 ]
 
 
@@ -89,11 +89,11 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#features">Características</MobileNavLink>
+            <MobileNavLink href="#testimonials">Testimonios</MobileNavLink>
+            <MobileNavLink href="#pricing">Planes</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
+            <MobileNavLink href="/login">Inicia Sesión</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -112,8 +112,8 @@ export function Header() {
     <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
-          <Image src={logo} alt="SmartTool" className="h-8 w-auto" height={70} width={70} />          
+          <span className="sr-only">Bodia AI</span>
+          <img src="../Logo.png" alt="SmartTool" className="h-8 w-auto" width="70px" />  
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -122,7 +122,7 @@ export function Header() {
           className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
           onClick={() => setMobileMenuOpen(true)}
         >
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only">Abrir menú principal</span>
           <Bars3Icon className="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
@@ -134,9 +134,9 @@ export function Header() {
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <Link href="/login" className="text-sm font-semibold leading-6 text-white">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </Link>
+        <a href="#" className="text-sm font-semibold leading-6 text-white">
+          Inicia Sesión <span aria-hidden="true">&rarr;</span>
+        </a>
       </div>
     </nav>
     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -144,14 +144,15 @@ export function Header() {
       <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>            
+            <span className="sr-only">Bodia AI</span>
+
           </a>
           <button
             type="button"
             className="-m-2.5 rounded-md p-2.5 text-gray-400"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <span className="sr-only">Close menu</span>
+            <span className="sr-only">Cerrar menú</span>
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -173,7 +174,7 @@ export function Header() {
                 href="/login"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
               >
-                Log in
+                Inicia Sesión
               </Link>
             </div>
           </div>

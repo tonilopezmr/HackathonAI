@@ -14,10 +14,10 @@ export function Footer() {
           <Image src={logo} alt="SmartTool" className="mx-auto h-14 w-auto" height={70} width={70} />          
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-              <NavLink href="#developers">Developers</NavLink>
-              <NavLink href="#team">Team</NavLink>
+              <NavLink href="#features">Características</NavLink>
+              <NavLink href="#pricing">Planes</NavLink>
+              <NavLink href="#developers">Desarrolladores</NavLink>
+              <NavLink href="#team">Equipo</NavLink>
             </div>
           </nav>
         </div>
