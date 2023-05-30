@@ -114,8 +114,8 @@ export function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Bodia AI</span>
-            <img
-              src='@/images/Logo.png'
+            <Image
+              src={logo}
               alt="SmartTool"
               className="h-8 w-auto"
               width="70px"
