@@ -14,10 +14,10 @@ const navigation = [
 ]
 
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
+import { Button } from '@/landing/Button'
+import { Container } from '@/landing/Container'
+import { Logo } from '@/landing/Logo'
+import { NavLink } from '@/landing/NavLink'
 
 function MobileNavLink({ href, children }) {
   return (

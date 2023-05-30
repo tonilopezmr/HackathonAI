@@ -7,7 +7,7 @@ function Label({ id, children }) {
   return (
     <label
       htmlFor={id}
-      className="mb-3 block text-sm font-medium text-gray-700"
+      className="mb-3 block text-sm font-medium text-gray-400 "
     >
       {children}
     </label>

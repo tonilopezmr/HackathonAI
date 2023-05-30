@@ -1,7 +1,7 @@
 
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import SmartPipeList from '@/components/SmartPipesList'
+import SmartPipeList from '@/landing/SmartPipesList'
 import React, { useState, useEffect } from 'react';
 import socketio from 'socket.io-client';
 

@@ -11,7 +11,7 @@ import clsx from 'clsx'
 import { create } from 'zustand'
 import highlighter from '../shiki';
 
-import { Tag } from '@/components/Tag'
+import { Tag } from '@/landing/Tag'
 
 
 const languageNames = {

@@ -4,6 +4,8 @@ ENV SMARTPIPES_PRODUCTION True
 ENV PORT 5000
 
 WORKDIR /app
+RUN mkdir files
+
 COPY ai_service.py .
 COPY requirements.txt .
 

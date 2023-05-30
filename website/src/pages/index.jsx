@@ -1,22 +1,22 @@
 import Head from 'next/head'
 
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
-import Developers from '@/components/Developers'
-import { Team } from '@/components/Team'
+import { CallToAction } from '@/landing/CallToAction'
+import { Faqs } from '@/landing/Faqs'
+import { Footer } from '@/landing/Footer'
+import { Header } from '@/landing/Header'
+import { Hero } from '@/landing/Hero'
+import { Pricing } from '@/landing/Pricing'
+import { PrimaryFeatures } from '@/landing/PrimaryFeatures'
+import { SecondaryFeatures } from '@/landing/SecondaryFeatures'
+import { Testimonials } from '@/landing/Testimonials'
+import Developers from '@/landing/Developers'
+import { Team } from '@/landing/Team'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>TaxPal - Accounting made simple for small businesses</title>
+        <title>Bodia AI - IA Accesible para todo el mundo</title>
         <meta
           name="description"
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."

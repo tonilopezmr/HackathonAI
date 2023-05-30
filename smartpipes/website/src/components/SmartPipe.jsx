@@ -120,7 +120,7 @@ export default function SmartPipe({currentRequest, smartPipe}) {
            
                   <a
                         onClick={() => {onClick(smartPipe, body)}}
-                        className="hidden rounded-md bg-[#00bda5] px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black sm:block"
+                        className="hidden rounded-md bg-indigo-500 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black sm:block"
                       >
                         Make Request
                       </a>            
@@ -133,7 +133,7 @@ export default function SmartPipe({currentRequest, smartPipe}) {
                 <div>
                   <span
                     className={classNames(
-                      'bg-[#00bda5]',
+                      'bg-indigo-500',
                       'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white'
                     )}
                   >                    
