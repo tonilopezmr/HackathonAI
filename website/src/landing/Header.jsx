@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const navigation = [  
   { name: 'Características', href: '#features' },
@@ -100,6 +101,9 @@ function MobileNavigation() {
   )
 }
 
+import logo from '@/images/Logo.png'
+
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
@@ -109,7 +113,7 @@ export function Header() {
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Bodia AI</span>
-          <img src="../Logo.png" alt="SmartTool" className="h-8 w-auto" width="70px" />          
+          <img src="../Logo.png" alt="SmartTool" className="h-8 w-auto" width="70px" />  
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -141,11 +145,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Bodia AI</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt=""
-            />
+
           </a>
           <button
             type="button"
@@ -170,12 +170,12 @@ export function Header() {
               ))}
             </div>
             <div className="py-6">
-              <a
-                href="#"
+              <Link
+                href="/login"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
               >
                 Inicia Sesión
-              </a>
+              </Link>
             </div>
           </div>
         </div>

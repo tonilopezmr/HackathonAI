@@ -1,5 +1,9 @@
+import Image from 'next/image'
+import logo from '@/images/Logo.png'
+
+
 export function Logo(props) {
   return (
-    <img src="../Logo.png" alt="SmartTool" className="mx-auto h-14 w-auto" width="70px" />          
+    <Image  src={logo} alt="SmartTool" className="mx-auto h-14 w-auto" height={70} width={70} />          
   )
 }

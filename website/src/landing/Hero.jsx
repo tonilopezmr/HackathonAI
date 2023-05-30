@@ -1,5 +1,7 @@
 import { useState } from 'react'
-
+import Image from 'next/image'
+import Link from 'next/link'
+import image from '@/images/screenshots/contacts.png'
 export function Hero() {
 
   return (
@@ -27,19 +29,19 @@ export function Hero() {
                 Aumenta tu capacidad de trabajo automatizandolo.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <Link
                   href="/login"
                   className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                 >
                   Empieza Ahora
-                </a>   
+                </Link>   
                 <a href="https://github.com/tonilopezmr/hackathonai" className="text-sm font-semibold leading-6 text-white">
                   Saber más <span aria-hidden="true">→</span>
                 </a>             
               </div>
             </div>
-            <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            <Image 
+              src={image}
               alt="App screenshot"
               width={2432}
               height={1442}

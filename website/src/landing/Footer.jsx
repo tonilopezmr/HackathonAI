@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '@/images/Logo.png'
 
 import { Container } from '@/landing/Container'
 import { Logo } from '@/landing/Logo'
@@ -9,7 +11,7 @@ export function Footer() {
     <footer className="bg-gray-900">     
       <Container>
         <div className="py-16">          
-          <img src="../Logo.png" alt="SmartTool" className="mx-auto h-14 w-auto" width="70px" />          
+          <Image src={logo} alt="SmartTool" className="mx-auto h-14 w-auto" height={70} width={70} />          
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Características</NavLink>
