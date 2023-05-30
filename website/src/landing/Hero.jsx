@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 
 export function Hero() {
 
@@ -38,7 +39,7 @@ export function Hero() {
                 </a>             
               </div>
             </div>
-            <img
+            <Image 
               src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
               alt="App screenshot"
               width={2432}

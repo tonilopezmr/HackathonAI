@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const navigation = [  
   { name: 'Features', href: '#features' },

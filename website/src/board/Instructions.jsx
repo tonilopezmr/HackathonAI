@@ -1,7 +1,7 @@
 import { Button } from '@/landing/Button'
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
+import Image from 'next/image'
 
 const getInstructions = async () => {
   const jwt = localStorage.getItem("token");

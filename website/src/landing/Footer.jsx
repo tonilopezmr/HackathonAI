@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Container } from '@/landing/Container'
 import { Logo } from '@/landing/Logo'
