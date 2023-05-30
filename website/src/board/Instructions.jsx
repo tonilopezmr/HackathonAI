@@ -25,6 +25,10 @@ const onUseCaseClick = (instruction) => {
     return "/write_blog_post"
   } else if (instruction.name.includes("pdfs")) {
     return "/pdfs"
+  } else if (instruction.name.includes("translate")) {
+    return "/translator"
+  } else if (instruction.name.includes("generate_images")) {
+    return "/generate_images"
   } else {
     return "/dashboard"
   }
