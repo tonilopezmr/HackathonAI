@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Características', href: '#features' },
   { name: 'Planes', href: '#pricing' },
   { name: 'Desarrolladores', href: '#developers' },
-  { name: 'Equipos', href: '#team' },
+  { name: 'Equipo', href: '#team' },
 ]
 
 import { Button } from '@/landing/Button'
