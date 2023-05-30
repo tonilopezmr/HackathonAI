@@ -53,7 +53,7 @@ export default function Instructions() {
           className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"
         >
           <div className="flex flex-1 flex-col p-8">
-            <Image className="mx-auto h-20 w-20 flex-shrink-0 rounded-full" src={instruction.thumbnail} alt="" />
+            <img className="mx-auto h-20 w-20 flex-shrink-0 rounded-full" src={instruction.thumbnail} alt="" />
             <h3 className="mt-6 text-xl font-bold text-gray-900">{instruction.title}</h3>
             <dl className="mt-1 flex flex-grow flex-col justify-between">              
               <dd className="text-sm text-gray-500">{instruction.description}</dd>              

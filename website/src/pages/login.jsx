@@ -42,6 +42,7 @@ export default function Login() {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/local`, {
       method: "POST",    
       headers: {
+        'accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
