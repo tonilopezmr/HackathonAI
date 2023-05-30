@@ -128,7 +128,7 @@ export function Pricing() {
             name="Individual"
             price="9 €"
             description="Bueno para cualquier persona que trabaja por cuenta propia y acaba de empezar."
-            href="/register"
+            href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
               '500 peticiones (Bloom)',
               '2 casos de uso por defecto',
@@ -142,7 +142,7 @@ export function Pricing() {
             name="Pyme"
             price="15 €"
             description="Perfecto para pequeñas y medianas empresas."
-            href="/register"
+            href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
               '1500 peticiones (Bloom)',
               '2 casos de uso por defecto',
@@ -156,7 +156,7 @@ export function Pricing() {
             name="Empresa"
             price="39 €"
             description="Incluso para aquellas grandes empresas que quieran aumentar su eficiencia."
-            href="/register"
+            href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
               '5000 peticiones (Bloom)',
               '2 casos de uso por defecto',
