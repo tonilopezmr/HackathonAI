@@ -144,12 +144,12 @@ export function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
+          <Link
             href="/login"
             className="text-sm font-semibold leading-6 text-white"
           >
             Inicia Sesión <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog
