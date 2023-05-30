@@ -62,8 +62,8 @@ export default function Instructions() {
             <dl className="mt-1 flex flex-grow flex-col justify-between">              
               <dd className="text-sm text-gray-500">{instruction.description}</dd>              
               <dd className="mt-3">
-                {instruction.role ? (<span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
-                  {instruction.role}
+                {instruction.name === "generate_images" | instruction.name === "translate" ? (<span className="inline-flex items-center rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-700 ring-1 ring-inset ring-gray-600/20">
+                  No disponible...
                 </span>) : null}                
               </dd>
             </dl>
