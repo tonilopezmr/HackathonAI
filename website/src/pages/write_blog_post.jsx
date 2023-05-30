@@ -35,10 +35,12 @@ const blogPostStructure = (result) => {
 
 export default function WriteBlogPost() {
   const [text, setText] = useState(null);
+  const [isLoading, setLoading] = useState(null);
   const [result, setResult] = useState(null);
 
   const writeBlog = (topic) => {    
     console.log(topic)
+    setLoading(true)
     fetch(`https://smartpipes.bodia.ai/create_blog_post_with_images`, {
       method: "POST",    
       headers: {
@@ -48,8 +50,8 @@ export default function WriteBlogPost() {
       body: JSON.stringify({ "blogpost": topic })
     })
     .then((res) => res.json())
-    .then((data) => {      
-      console.log(data)
+    .then((data) => {   
+      setLoading(false)         
       setResult(data)
       return data   
     })
@@ -84,9 +86,10 @@ export default function WriteBlogPost() {
                  Cargar
                </a>            
             </div>            
-            {result ? (<div className="bg-white border rounded-md p-4">
+            {result | isLoading ? (<div className="bg-white border rounded-md p-4">
                   <pre className="whitespace-pre-wrap break-word">
-                      {blogPostStructure(result)}                      
+                      {isLoading ? "\n\nLoading ... \n\n" : "" }
+                      {result? blogPostStructure(result) : ""}                      
                   </pre>
             </div>) : null}
           </div>                
