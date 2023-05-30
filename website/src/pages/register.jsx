@@ -5,8 +5,15 @@ import { AuthLayout } from '@/landing/AuthLayout'
 import { Button } from '@/landing/Button'
 import { SelectField, TextField } from '@/landing/Fields'
 import { Logo } from '@/landing/Logo'
+import { useEffect } from 'react'
 
 export default function Register() {
+  useEffect(() => {
+    localStorage.setItem("token", null);
+    localStorage.setItem("email", null);
+    localStorage.setItem("id", null);
+  }, [])
+
   return (
     <>
       <Head>

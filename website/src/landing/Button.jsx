@@ -15,6 +15,7 @@ const variantStyles = {
     blue: 'bg-indigo-600 text-white hover:text-slate-100 hover:bg-indigo-500 active:bg-indigo-800 active:text-blue-100 focus-visible:outline-blue-600',
     white:
       'bg-white border-slate-400 border text-slate-900 hover:bg-indigo-50 active:bg-indigo-200 active:text-slate-600 focus-visible:outline-white',
+    harto: "bg-white border-slate-400 border text-white hover:bg-indigo-50 active:bg-indigo-200 active:text-white focus-visible:outline-white"
   },
   outline: {
     slate:

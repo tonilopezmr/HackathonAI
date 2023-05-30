@@ -1,4 +1,5 @@
 import { Button } from '@/landing/Button'
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 
@@ -19,11 +20,13 @@ const getInstructions = async () => {
 }
 
 
-const onUseCaseClick = (instruction) => {  
-  if(instruction.name.includes("write-blog")) {
-    //
+const onUseCaseClick = (instruction) => {    
+  if(instruction.name.includes("write-blog-post")) {
+    return "/write_blog_post"
   } else if (instruction.name.includes("pdfs")) {
-    //see pdf
+    return "/pdfs"
+  } else {
+    return "/dashboard"
   }
 }
 
@@ -60,9 +63,9 @@ export default function Instructions() {
                 </span>) : null}                
               </dd>
             </dl>
-            <Button onClick={() =>onUseCaseClick(instruction)} color="white" className="mt-10">
+            <Link href={onUseCaseClick(instruction)} className="group inline-flex items-center justify-center rounded-lg py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white border-slate-400 border text-slate-900 hover:bg-indigo-50 active:bg-indigo-200 active:text-slate-600 focus-visible:outline-white mt-10" >
               Cargar
-            </Button>
+            </Link>
           </div>          
         </li>
       ))}
