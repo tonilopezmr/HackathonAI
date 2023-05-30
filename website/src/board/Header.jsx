@@ -65,7 +65,7 @@ export function Header(props) {
                             <div>
                               <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                 <span className="sr-only">Open user menu</span>
-                                <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                                <Image className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
                               </Menu.Button>
                             </div>
                             <Transition
@@ -133,7 +133,7 @@ export function Header(props) {
                   <div className="border-t border-gray-700 pb-3 pt-4">
                     <div className="flex items-center px-5">
                       <div className="flex-shrink-0">
-                        <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                        <Image className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
                       </div>
                       <div className="ml-3">
                         <div className="text-base font-medium leading-none text-white">{user.name}</div>

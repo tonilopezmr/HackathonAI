@@ -109,7 +109,7 @@ export function Header() {
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
-          <img src="../Logo.png" alt="SmartTool" className="h-8 w-auto" width="70px" />          
+          <Image src="../Logo.png" alt="SmartTool" className="h-8 w-auto" height="70px" width="70px" />          
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -141,7 +141,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
+            <Image
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt=""
