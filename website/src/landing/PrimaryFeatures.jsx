@@ -6,8 +6,8 @@ import clsx from 'clsx'
 import { Container } from '@/landing/Container'
 import screenshotExpenses from '@/images/screenshots/pdfs.png'
 import screenshotPayroll from '@/images/screenshots/blog_post.png'
-import screenshotReporting from '@/images/screenshots/blog_post.png'
-import screenshotVatReturns from '@/images/screenshots/blog_post.png'
+import screenshotReporting from '@/images/screenshots/traductor.png'
+import screenshotVatReturns from '@/images/screenshots/images.png'
 
 const features = [
   {
@@ -23,9 +23,9 @@ const features = [
     image: screenshotExpenses,
   },
   {
-    title: 'Resume tus reuniones',
+    title: 'Genera cualquíer imagen',
     description:
-      "Crea resumenes de las reuniones en el trabajo y compartelo con el equipo.",
+      "Crea imagenes a partir de una descripción fácilmente.",
     image: screenshotVatReturns,
   },
   {

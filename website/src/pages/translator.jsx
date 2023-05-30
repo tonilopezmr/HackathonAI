@@ -62,7 +62,7 @@ export default function WriteBlogPost() {
     <>  
       <div className="min-h-full">
         
-        <Header title="Traduce como un nativo (no terminado)"/>
+        <Header title="Traduce como un nativo"/>
         <main className="-mt-32">
           <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             <div className='mb-4'>            
