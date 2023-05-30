@@ -101,6 +101,9 @@ function MobileNavigation() {
   )
 }
 
+import logo from '@/images/Logo.png'
+
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
@@ -110,7 +113,7 @@ export function Header() {
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
-          <Image src="../Logo.png" alt="SmartTool" className="h-8 w-auto" height="70px" width="70px" />          
+          <Image src={logo} alt="SmartTool" className="h-8 w-auto" height={70} width={70} />          
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -131,9 +134,9 @@ export function Header() {
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-white">
+        <Link href="/login" className="text-sm font-semibold leading-6 text-white">
           Log in <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
       </div>
     </nav>
     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -141,12 +144,7 @@ export function Header() {
       <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Image
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt=""
-            />
+            <span className="sr-only">Your Company</span>            
           </a>
           <button
             type="button"
@@ -171,12 +169,12 @@ export function Header() {
               ))}
             </div>
             <div className="py-6">
-              <a
-                href="#"
+              <Link
+                href="/login"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
               >
                 Log in
-              </a>
+              </Link>
             </div>
           </div>
         </div>
