@@ -50,7 +50,7 @@ export default function WriteBlogPost() {
   const [isQuestionLoading, setQuestionLoading] = useState(false);
   const [isFileReady, setFileReady] = useState(false);
   const [fileId, setFileId] = useState(null);
-  const [answer, setAnswer] = useState({"answer": "El documento es un Acuerdo de Confidencialidad entre Google y D. Antonio López Marín, en el que ambas partes reconocen su capacidad legal para obligarse a los efectos del acuerdo. ACE compartirá información confidencial relacionada con el proyecto Bard con el Receptor, y ambas partes acuerdan cumplir con todas sus obligaciones en virtud del presente Acuerdo de Confidencialidad para proteger la confidencialidad e impedir cualquier acceso o uso o comunicación no autorizado de dicha información. El acuerdo establece las condiciones bajo las cuales se compartirá la información confidencial y las consecuencias del incumplimiento del mismo." });
+  const [answer, setAnswer] = useState();
 
   const uploadFile = (file) => {    
     const form = new FormData()
@@ -68,7 +68,7 @@ export default function WriteBlogPost() {
       setLoading(false);
       setFileReady(true);
       setFileId(data.filename)
-      console.log(data)      
+      onClick("Dame la bienvenida con un Hola :) y resumeme de que trata este documento? Adicionalmente añademe preguntas que podría hacer le a alguien que haya leido este documento. ", data.filename)
     }).catch(err => {
       setLoading(false)
       setUploadError(true)
@@ -103,16 +103,20 @@ export default function WriteBlogPost() {
     event.preventDefault();
   }
 
-  const onClick = (text) => {
+  const onClick = (text, filename=undefined) => {
     console.log(text)
     setQuestionLoading(true)
+    var file =  fileId
+    if(fileId === null || fileId === undefined) {
+      file = filename
+    }
     fetch(`https://smartpipes.bodia.ai/query_pdfs`, {
       method: "POST",    
       headers: {
         'Content-Type': 'application/json',
         "Authorization": "Bearer amigos_hackathonianos"
       },
-      body: JSON.stringify({ "query": text, "filename": fileId })
+      body: JSON.stringify({ "query": text, "filename": file })
     })
     .then((res) => res.json())
     .then((data) => {      
