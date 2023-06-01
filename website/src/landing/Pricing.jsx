@@ -120,7 +120,7 @@ export function Pricing() {
             Simple for everyone
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn't matter the size of your company or if you're an individual.
+            It doesn&apost matter the size of your company or if you&aposre an individual.
           </p>
         </div>
 
