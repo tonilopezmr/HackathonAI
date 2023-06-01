@@ -10,14 +10,6 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/adrianlopezmontoro/?locale=es_ES',
   },
   {
-    name: 'Javier Fraile',
-    role: 'Landing Developer',
-    imageUrl:
-      'https://media.discordapp.net/attachments/1112673608205086761/1113049611511275570/Javier_Fraile_de_Medina.jpg?width=621&height=621',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
     name: 'Toni López',
     role: 'AI & Product Guy',
     imageUrl:
@@ -47,17 +39,18 @@ export function Team() {
           </div>
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Equipo
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-400 text-justify">
-              Somos un equipo joven que combina la experiencia con la ilusión de aprender,
-              unido con un mismo propósito, participar en el primer Hackathon de IA en español.
-              ¿El resultado?, Bodia AI, y la iniciativa de permitir a empresas e individuales
-              potenciar su eficiencia y productividad haciendo uso de la IA.
-            </p>
-          </div>
+        <div className="mx-auto max-w-2xl lg:mx-0">
+  <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+    Team
+  </h2>
+  <p className="mt-6 text-lg leading-8 text-gray-400 text-justify">
+    We are a young team that combines experience with the enthusiasm to learn,
+    united by a common purpose: participating in the first Spanish AI Hackathon.
+    The result? Bodia AI, and the initiative to empower companies and individuals
+    to enhance their efficiency and productivity using AI.
+  </p>
+</div>
+
           <ul
             role="list"
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"

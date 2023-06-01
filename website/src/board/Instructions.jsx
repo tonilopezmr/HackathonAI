@@ -68,7 +68,7 @@ export default function Instructions() {
               </dd>
             </dl>
             <Link href={onUseCaseClick(instruction)} className="group inline-flex items-center justify-center rounded-lg py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white border-slate-400 border text-slate-900 hover:bg-indigo-50 active:bg-indigo-200 active:text-slate-600 focus-visible:outline-white mt-10" >
-              Cargar
+              Done
             </Link>
           </div>          
         </li>

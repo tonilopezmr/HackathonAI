@@ -8,10 +8,10 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Características', href: '#features' },
-  { name: 'Planes', href: '#pricing' },
-  { name: 'Desarrolladores', href: '#developers' },
-  { name: 'Equipo', href: '#team' },
+  { name: 'Features', href: '#features' },
+  { name: 'Pricing', href: '#pricing' },
+  { name: 'Developers', href: '#developers' },
+  { name: 'Team', href: '#team' },
 ]
 
 import { Button } from '@/landing/Button'
@@ -92,7 +92,7 @@ function MobileNavigation() {
             <MobileNavLink href="#testimonials">Testimonios</MobileNavLink>
             <MobileNavLink href="#pricing">Planes</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Inicia Sesión</MobileNavLink>
+            <MobileNavLink href="/login">Sign In</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -148,7 +148,7 @@ export function Header() {
             href="/login"
             className="text-sm font-semibold leading-6 text-white"
           >
-            Inicia Sesión <span aria-hidden="true">&rarr;</span>
+            Sign In <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>

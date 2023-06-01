@@ -11,30 +11,27 @@ import screenshotVatReturns from '@/images/screenshots/images.png'
 
 const features = [
   {
-    title: 'Redactar Blog post',
-    description:
-      "Redacta un tu Blog incluyendo imagenes generadas automáticamente.",
+    title: 'Write Blog Posts',
+    description: 'Write your Blog including automatically generated images.',
     image: screenshotPayroll,
   },
   {
-    title: 'Habla con tus PDFs',
-    description:
-      "Preguntale a cualquier fichero que es lo que hace.",
+    title: 'Talk to your PDFs',
+    description: 'Ask any file what it does.',
     image: screenshotExpenses,
   },
   {
-    title: 'Genera cualquíer imagen',
-    description:
-      "Crea imagenes a partir de una descripción fácilmente.",
+    title: 'Generate Any Image',
+    description: 'Create images from an easy description.',
     image: screenshotVatReturns,
   },
   {
-    title: 'Mucho más',
-    description:
-      'Puedes crear tu caso de uso en concreto usando código en Python.',
+    title: 'Much More',
+    description: 'You can create your specific use case using Python code.',
     image: screenshotReporting,
   },
-]
+];
+
 
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -63,10 +60,10 @@ export function PrimaryFeatures() {
       <Container className="relative">        
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-            Descubre todo el potencial de la IA
+            Discover the full potential of AI
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Automatiza tus tareas fácilmente
+            Easily automate your tasks
           </p>
         </div>
         <Tab.Group

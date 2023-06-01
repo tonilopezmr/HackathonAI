@@ -70,7 +70,7 @@ export default function Login() {
     <div className="bg-gray-900 flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8">
     <div className="sm:mx-auto sm:w-full sm:max-w-md">      
       <Logo logo="true" color="#fff" className="mx-auto h-12 w-auto" />      
-      <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white">Entra en tu cuenta</h2>  
+      <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white">Sign in into your account</h2>  
     </div>
 
     <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -79,7 +79,7 @@ export default function Login() {
           <div>       
             <TextField
               className="text-white mb-5 col-span-full"
-              label="Correo electronico"
+              label="Email"
               id="email"
               name="email"
               type="email"
@@ -88,7 +88,7 @@ export default function Login() {
             />
             <TextField
               className="text-white mb-10 col-span-full"
-              label="Contraseña"
+              label="Password"
               id="password"
               name="password"
               type="password"
@@ -100,7 +100,10 @@ export default function Login() {
             </Button>
           </div>
         </form>       
-        <p className="mt-3 text-center text-xs text-gray-300">Cuando inicias sesión, estás deacuerdo con nuestra <MyLink className="underline" href="/privacy">pólitica de privacidad</MyLink>.</p> 
+        <p className="mt-3 text-center text-xs text-gray-300">
+  When you log in, you agree to our <MyLink className="underline" href="/privacy">privacy policy</MyLink>.
+</p>
+
       </div>
     </div>
   </div>

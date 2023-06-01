@@ -61,7 +61,7 @@ export default function WriteBlogPost() {
     <>  
       <div className="min-h-full">
         
-        <Header title="Crear Blog Post"/>
+        <Header title="New Blog Post"/>
         <main className="-mt-32">
           <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
             <div className='mb-4'>            
@@ -70,7 +70,7 @@ export default function WriteBlogPost() {
                   rows={8}
                   name="comment"
                   id="comment"
-                  placeholder='Escribe sobre que trata el blog post'
+                  placeholder='Write about the topic of the blog post'
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={e => setText(e.target.value)}
                   defaultValue={''}
@@ -83,7 +83,7 @@ export default function WriteBlogPost() {
                  onClick={() => {writeBlog(text)}}
                  className="hidden rounded-md bg-indigo-500 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black sm:block"
                >
-                 Cargar
+                 Done
                </a>            
             </div>            
             {result | isLoading ? (<div className="bg-white border rounded-md p-4">

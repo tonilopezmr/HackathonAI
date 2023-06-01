@@ -117,54 +117,55 @@ export function Pricing() {
         </div>
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Simple para todo el múndo
+            Simple for everyone
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            No importa el tamaño de tu empresa o particular.
+            It doesn't matter the size of your company or if you're an individual.
           </p>
         </div>
+
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
-          <Plan
+        <Plan
             name="Individual"
             price="9 €"
-            description="Bueno para cualquier persona que trabaja por cuenta propia y acaba de empezar."
+            description="Suitable for freelancers who are just starting out."
             href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
-              '500 peticiones (Bloom)',
-              '2 casos de uso por defecto',
-              '3 casos de uso a personalizar',
-              '1 cuenta personal',
-              'Soporte técnico',
-            ]}
+            '500 requests (Bloom)',
+            '2 default use cases',
+            '3 customizable use cases',
+            '1 personal account',
+            'Technical support',
+          ]}
           />
           <Plan
             featured
-            name="Pyme"
+            name="SME"
             price="15 €"
-            description="Perfecto para pequeñas y medianas empresas."
+            description="Perfect for small and medium-sized enterprises."
             href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
-              '1500 peticiones (Bloom)',
-              '2 casos de uso por defecto',
-              '6 casos de uso a personalizar',
-              '5 cuentas de usuario',
-              'Añade más cuentas por 2 €',
-              'Soporte técnico prioritario',
-            ]}
+            '1500 requests (Bloom)',
+            '2 default use cases',
+            '6 customizable use cases',
+            '5 user accounts',
+            'Add more accounts for 2 €',
+            'Priority technical support',
+          ]}
           />
           <Plan
-            name="Empresa"
+            name="Enterprise"
             price="39 €"
-            description="Incluso para aquellas grandes empresas que quieran aumentar su eficiencia."
+            description="Even for large companies looking to increase their efficiency."
             href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
             features={[
-              '5000 peticiones (Bloom)',
-              '2 casos de uso por defecto',
-              '13 casos de uso a personalizar',
-              '30 cuentas de usuario',
-              'Añade más cuentas por 1 €',
-              'Soporte técnico prioritario',
-            ]}
+            '5000 requests (Bloom)',
+            '2 default use cases',
+            '13 customizable use cases',
+            '30 user accounts',
+            'Add more accounts for 1 €',
+            'Priority technical support',
+          ]}
           />
         </div>
       </Container>

@@ -129,7 +129,7 @@ export default function WriteBlogPost() {
            <a                
                  className="hidden rounded-md bg-indigo-500 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black sm:block"
                >
-                 Cargar
+                 Done
                </a>            
             </div>            
             {result | isLoading ? (<div className="bg-white border rounded-md p-4">

@@ -12,20 +12,20 @@ export default function Developers() {
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">        
         <div className="relative isolate px-6 pt-16 bg-neutral-900 shadow-2xl sm:rounded-3xl mx-auto">                          
 
-          <div className="mx-auto max-w-md text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Toda la potenc<span className="text rounded-lg text-indigo-500/100">IA</span>
-              <br />              
-              en unas <span className="text rounded-lg text-indigo-500/100">Pocas Lineas</span> de código.              
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Hemos creado una nueva forma de escribir IA y DESPLEGARLA A PRODUCCIÓN FÁCILMENTE.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a href="https://github.com/tonilopezmr/hackathonai" className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Empieza Ahora</a>
-            
-            </div>
+        <div className="mx-auto max-w-md text-center">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            All the power of <span className="text rounded-lg text-indigo-500/100">AI</span>
+            <br />
+            in just <span className="text rounded-lg text-indigo-500/100">a Few Lines</span> of code.
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            We have created a new way of writing AI and DEPLOYING IT TO PRODUCTION EASILY.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a href="https://github.com/tonilopezmr/hackathonai" className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Start Now</a>
           </div>
+        </div>
+
           <div className="w-full mt-32 max-w-4xl mx-auto">
             <div className="mbp">
             <CodeGroup tag="POST" label="/create_blog_post_with_images">           
