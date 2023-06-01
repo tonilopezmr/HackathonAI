@@ -68,7 +68,7 @@ export default function WriteBlogPost() {
       setLoading(false);
       setFileReady(true);
       setFileId(data.filename)
-      onClick("Dame la bienvenida con un Hola :) y resumeme de que trata este documento? Adicionalmente añademe preguntas que podría hacer le a alguien que haya leido este documento. ", data.filename)
+      onClick("Welcome me with a Hello :) and give me a summary of what this document is about? Additionally, give me some questions I could ask someone who has read this document.", data.filename)
     }).catch(err => {
       setLoading(false)
       setUploadError(true)
