@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -338,7 +339,7 @@ export default function WhatsAppView({ state }: { state: AppState }) {
       return { ...message, isFirst }
     })
 
-    return messagesWithFirstFlag.map((message, index) => (
+    return messagesWithFirstFlag.map((message) => (
       <Message
         key={message.message_id}
         message={message}
@@ -492,8 +493,7 @@ export default function WhatsAppView({ state }: { state: AppState }) {
               conversationId={selectedConversationId}
               composerDisplayValue={
                 selectedConversation?.composer_display_value ?? ''
-              }
-              currentTaskConversationId={currentTaskConversationId}
+              }              
             />
           </div>
         ) : (

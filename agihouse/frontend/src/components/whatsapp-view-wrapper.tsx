@@ -11,6 +11,7 @@ export const WhatsAppViewWrapper = () => {
   const [fakeLoading, setFakeLoading] = useState(false)  
   const { state, error, isLoading, isConnecting } = useStateSubscription({
     onSuccess: (data) => {      
+      console.log('WebSocket data:', data)
     },
     onError: (error) => {
       console.error('WebSocket error:', error)

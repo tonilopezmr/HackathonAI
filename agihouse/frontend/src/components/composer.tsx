@@ -9,13 +9,11 @@ import StickerIcon from '../../public/whatsapp-ripoff-icons/WhatsappStickerOutli
 interface ComposerProps {
   conversationId: string | null
   composerDisplayValue: string
-  currentTaskConversationId: string | undefined
 }
 
 export default function Composer({
   conversationId,
-  composerDisplayValue,
-  currentTaskConversationId,
+  composerDisplayValue
 }: ComposerProps) {
   const [displayText, setDisplayText] = useState('')
   const [isSending, setIsSending] = useState(false)
